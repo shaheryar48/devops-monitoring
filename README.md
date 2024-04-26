@@ -8,7 +8,17 @@ You need to have `node` and `npm` installed on your system. Node version should 
 
 In the backend folder, there is an `.env.example`. Rename this to just `.env` and update `DATABASE_URL`.
 
-### 2. Running backend
+> Note: `DATABASE_URL` should be in this format `DATABASE_URL="postgresql://USERNAME:PASSWORD@HOSTNAME:PORT"`.
+
+### 2. Running database migration
+
+When running for the first time, you need to run database migrations first so to do so navigate to backend folder and run the following
+
+```bash
+npx prisma migrate deploy
+```
+
+### 3. Running backend
 
 Navigate to backend folder and run the following
 
@@ -25,7 +35,7 @@ npm run start
 This will start the backend server at port 5000.
 
 
-### 3. Running frontend
+### 4. Running frontend
 
 Navigate to frontend folder and run the following
 
