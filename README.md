@@ -65,7 +65,7 @@ npm install
 Once the dependencies are installed then run the following:
 
 ```bash
-npm run dev
+npm run dev -- --host
 ```
 
 This will start the frontend server at port `4000`.
