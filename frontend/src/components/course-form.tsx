@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
     FormControl,
     FormLabel,
@@ -38,7 +38,7 @@ export const CourseForm = () => {
                     "Content-Type": "application/json",
                 },
             })
-            const result = await response.json()
+            await response.json()
             toast({ status: 'success', title: 'Course Created!' })
         } catch (err: any) {
             console.log(err.message)

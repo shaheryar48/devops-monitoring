@@ -18,9 +18,16 @@ You need to have `node` and `npm` installed on your system. Node version should 
 
 ## 1. Environment variable setup
 
+### 1. Backend
 In the backend folder, there is an `.env.example`. Rename this to just `.env` and update `DATABASE_URL`.
 
 > ***Note:** `DATABASE_URL` should be in this format `DATABASE_URL="postgresql://USERNAME:PASSWORD@HOSTNAME:PORT"`*.
+
+### 2. Frontend
+
+In the frontend folder, there is an `.env.example`. Rename this to just `.env` and update `VITE_BACKEND_URL`.
+
+> ***Note:** `VITE_BACKEND_URL` is the Backend server URL*.
 
 ## 2. Backend setup
 
