@@ -1,6 +1,6 @@
 os: linux
 files:
-  - source: /
+  - source: frontend
     destination: /opt/devops-monitoring/frontend
 hooks:
   ApplicationStop:
